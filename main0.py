@@ -28,8 +28,8 @@ active_jobs = {}
 print("🔄 All active jobs cleared on startup.")
 
 # fixed channels
-LOG_CHANNEL = "-1002980130177"     # log channel
-DEST_CHANNEL = "-1003070910589"   # destination channel
+LOG_CHANNEL = "-1003490649896"     # log channel
+DEST_CHANNEL = "-1003154507014"   # destination channel
 
 # ——————————————————————————————————————————————
 # Helper Functions
@@ -105,7 +105,7 @@ async def start_batch(c: Client, m: Message):
         return await m.reply_text("❗️ Invalid Telegram link.", quote=True)
 
     total_count = 1000       # max messages to process
-    batch_size = 20          # messages per batch (skip bhi count honge)
+    batch_size = 100          # messages per batch (skip bhi count honge)
     sent_success = 0
 
     progress_msg = await m.reply_text("Starting batch… 🐥", quote=True)
